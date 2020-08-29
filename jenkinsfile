@@ -13,15 +13,15 @@ pipeline {
 
          stage('testing stage') {
              steps {
-                bat "mvn test"
+                bat "mvn install"
         }
     }
 
-          stage('deployment stage') {
-              steps {
-                bat "mvn deploy"
-        }
-    }
+         // stage('deployment stage') {
+         //     steps {
+        //        bat "mvn deploy"
+      //  }
+     // }
 
   }
 
